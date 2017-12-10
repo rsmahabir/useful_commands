@@ -1,3 +1,5 @@
+## Check if particular python module is installed
+
 #This example uses the imp package and 'pip' as the package to search for
 import imp
 imp.find_module('pip')
