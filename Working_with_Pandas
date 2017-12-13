@@ -1,0 +1,7 @@
+
+## Dropping columns from a dataframe based on the 'integer' location of the columns
+cols = [1,4] # If its more than one column you can first create a list containing the relevant column numbers
+df.drop(df.columns[cols],axis=1,inplace=True) # This will then drop the relevant columns from the dataframe
+
+# Dropping all rows in a dataframe based on a column containing NaN values (NaN means Not a Number, which may occur when reading in a column(s) with no data values for some cells)
+data_df.dropna(subset=['published_at'], inplace=True) # Removes all rows with NaN values for a specific column (e.g. published_at time)
