@@ -1,1 +1,2 @@
-
+## Convert all elements in a list to lowercase
+arr = [element.lower() for element in arr] # Convert all list elements to lowercase (arr is the list)
