@@ -2,6 +2,9 @@
 ## List all rows in dataframe
 list(df) # In this case 'df' is the name of the dataframe
 
+## Show all columns in a single row
+df.columns # In this case, df is the name of the dataframe
+
 ## Dropping columns from a dataframe based on the 'integer' location of the columns
 cols = [1,4] # If its more than one column you can first create a list containing the relevant column numbers
 df.drop(df.columns[cols],axis=1,inplace=True) # This will then drop the relevant columns from the dataframe
