@@ -21,3 +21,6 @@ df = pd.DataFrame(index = range) # Sets the index to the time values
 
 ## Converting a pandas column to a numpy array
 a = np.asarray(newspaper['names'])
+
+## Convert all values in a pandas column to lower case
+df['names'].str.lower()
