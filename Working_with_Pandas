@@ -26,6 +26,12 @@ a = list(newspaper['names'])
 ## Convert all values in a pandas column to lower case
 df['names'].str.lower()
 
+## Rename a specific column
+df.rename(columns={'old_column_name': 'new_column_name'}, inplace=True)
+
+# Rename all columns
+df.columns = ['column0', 'column1','column2', 'column3'] # The number of new names must match the number of columns
+
 ############ DATAFRAME OPERATIONS ################
 ## Creating a dataframe with sequentual time values
 range = pd.date_range('2015-01-01', '2015-12-31', freq='15min') # start data, end date, frequency of interval
