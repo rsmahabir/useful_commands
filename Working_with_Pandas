@@ -38,6 +38,10 @@ df.columns = ['column0', 'column1','column2', 'column3'] # The number of new nam
 ## Set index to a specific column
 df.set_index('published_at',inplace=True)
 
+## Group and count by values in a specific column
+# The index of the dataframe must be of datetime type for this to work
+grouped = df.groupby(['author', pd.Grouper(freq='D')]).count()
+
 
 ############ DATAFRAME OPERATIONS ################
 ## Creating a dataframe with sequentual time values
