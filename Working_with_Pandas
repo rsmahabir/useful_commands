@@ -24,7 +24,7 @@ a = np.asarray(newspaper['names'])
 a = list(newspaper['names'])
 
 ## Convert all values in a pandas column to lower case
-df['names'].str.lower()
+df['names']=df['names'].str.lower()
 
 ## Rename a specific column
 df.rename(columns={'old_column_name': 'new_column_name'}, inplace=True)
