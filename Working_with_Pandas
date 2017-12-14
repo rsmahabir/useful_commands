@@ -1,3 +1,6 @@
+##############################################################################################
+## I'm building these as I go along and get more into data science. Feel free to contribute ##
+##############################################################################################
 
 ## List all rows in dataframe
 list(df) # In this case 'df' is the name of the dataframe
@@ -12,6 +15,9 @@ df.drop(df.columns[cols],axis=1,inplace=True) # This will then drop the relevant
 ## Dropping all rows in a dataframe based on a column containing NaN values (NaN means Not a Number, which may occur when reading in a column(s) with no data values for some cells)
 data_df.dropna(subset=['published_at'], inplace=True) # Removes all rows with NaN values for a specific column (e.g. published_at time)
 
-# Creating a dataframe with sequentual time values
+## Creating a dataframe with sequentual time values
 range = pd.date_range('2015-01-01', '2015-12-31', freq='15min') # start data, end date, frequency of interval
 df = pd.DataFrame(index = range) # Sets the index to the time values
+
+## Converting a pandas column to a numpy array
+a = np.asarray(newspaper['names'])
