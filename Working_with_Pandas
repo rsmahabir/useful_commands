@@ -20,6 +20,9 @@ df.drop(df.columns[cols],axis=1,inplace=True) # This will then drop the relevant
 ## Converting a pandas column to a numpy array
 a = np.asarray(newspaper['names'])
 
+## Converting a pandas column to a list
+a = list(newspaper['names'])
+
 ## Convert all values in a pandas column to lower case
 df['names'].str.lower()
 
