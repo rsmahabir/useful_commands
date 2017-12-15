@@ -59,4 +59,4 @@ df = pd.DataFrame(index = range) # Sets the index to the time values
 new = old[['id', 'x', 'y']].copy() # The old dataframe will be unaffected unless old = old[['id', 'x', 'y']].copy()
 
 ## Safe dataframe to csv file
-df.to_csv("output_file.csv", sep=';') The separating can be any character of your choosing
+df.to_csv("output_file.csv", sep=';') #The separating can be any character of your choosing. In some cases you may need to add the encoding parameter (encoding='utf-8')
