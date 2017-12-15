@@ -54,3 +54,6 @@ del df['column_to_be_dropped']
 ## Creating a dataframe with sequentual time values
 range = pd.date_range('2015-01-01', '2015-12-31', freq='15min') # start data, end date, frequency of interval
 df = pd.DataFrame(index = range) # Sets the index to the time values
+
+## creating a new dataframe from an old one
+new = old[['id', 'x', 'y']].copy() # The old dataframe will be unaffected unless old = old[['id', 'x', 'y']].copy()
