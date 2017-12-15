@@ -45,6 +45,10 @@ grouped = df.groupby(['author', pd.Grouper(freq='D')]).count()
 ## Get unique values from a pandas column
 df.name.unique() # Where df is the dataframe and 'name' is the name of the column
 
+## Delete/drop a column from the dataframe
+del df['column_to_be_dropped']
+
+
 
 ############ DATAFRAME OPERATIONS ################
 ## Creating a dataframe with sequentual time values
