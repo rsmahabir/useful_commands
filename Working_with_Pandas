@@ -42,6 +42,9 @@ df.set_index('published_at',inplace=True)
 # The index of the dataframe must be of datetime type for this to work
 grouped = df.groupby(['author', pd.Grouper(freq='D')]).count()
 
+## Get unique values from a pandas column
+df.name.unique() # Where df is the dataframe and 'name' is the name of the column
+
 
 ############ DATAFRAME OPERATIONS ################
 ## Creating a dataframe with sequentual time values
