@@ -48,6 +48,12 @@ df.name.unique() # Where df is the dataframe and 'name' is the name of the colum
 ## Delete/drop a column from the dataframe
 del df['column_to_be_dropped']
 
+## Check for duplicate index (or other column) entries
+df[df.index.duplicated()]
+
+## Remove duplicated index (or other column)  entries
+df = df[~df.index.duplicated()]
+
 
 
 ############ DATAFRAME OPERATIONS ################
